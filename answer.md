@@ -16,7 +16,7 @@
 
 [Ссылка](https://eshekhovtcova.blogspot.com) на мое портфолио
 
-![Der grosse Baum](https://unsplash.com/photos/choc7LYd98I)
+![Der grosse Baum](https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80)
 ```python
     #Код
 ```
