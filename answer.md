@@ -18,5 +18,39 @@
 
 ![Die Bäume](https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80)
 ```python
-    #Код
+"""
+    Написать программу по вычисленю площади треугольника по формуле Герона
+"""
+
+
+def main():
+    flag_enter = True
+    while flag_enter:
+        # Ввод сторон треугольника
+        a = float(input("Введите a: "))
+        b = float(input("Введите b: "))
+        c = float(input("Введите c: "))
+        # Проверяем, существует ли треугольник
+        if a + c > b and a + b > c and c + b > a:
+            flag_enter = False
+            # Находим площадь по формуле Герона
+            result = geron(a, b, c)
+            # И выводим ее
+            print("Площадь треугольника: ", result)
+        else:
+            print("Треугольник не существует. Попробуйте ввести другие данные")
+
+
+def geron(a, b, c):
+    """
+    Расчет площади треугольника по формуле Герона
+    a, b, c -стороны треугольника
+    """
+    # Полупериметр
+    p = a + b + c
+    # Площадь
+    result = pow(p * (p-a) * (p-b) * (p-c), 0.5)
+    return result
+main()
+
 ```
